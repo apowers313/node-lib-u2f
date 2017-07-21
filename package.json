@@ -6,7 +6,8 @@
   "scripts": {
     "test": "istanbul cover _mocha",
     "docs": "jsdoc -c ./.jsdoc-conf.json",
-    "publish": "istanbul-coveralls && gh-pages --silent --repo https://$GH_TOKEN@github.com/apowers313/node-lib-u2f.git --dist docs"
+    "publish": "istanbul-coveralls && gh-pages --silent --repo https://$GH_TOKEN@github.com/apowers313/node-lib-u2f.git --dist docs",
+    "postinstall": "make"
   },
   "keywords": [
     "ffi",
@@ -34,5 +35,7 @@
     "mockery": "^2.0.0",
     "sinon": "^1.17.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ffi": "^2.2.0"
+  }
 }

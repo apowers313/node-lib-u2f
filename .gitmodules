@@ -1,0 +1,3 @@
+[submodule "src/libu2ftest"]
+	path = src/libu2ftest
+	url = https://github.com/apowers313/libu2ftest
